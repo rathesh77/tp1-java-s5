@@ -1,28 +1,26 @@
 package core;
 
-public class Bonbon {
-    private String nom;
+public class Bonbon extends Objet{
     private int amount;
 
     public int getAmount() {
         return amount;
     }
 
-    public String getNom() {
-        return nom;
-    }
 
-    public Bonbon(String nom, int amount)
+    public Bonbon(String nom, int amount,int prix, String typeUtilisation)
     {
-        this.nom = nom;
+        super(nom,prix,typeUtilisation);
+
         this.amount = amount;
     }
 
     @Override
     public String toString() {
         return "Bonbon{" +
-                "nom='" + nom + '\'' +
-                ", amount=" + amount +
+                "amount=" + amount +
+                ", nom='" + nom + '\'' +
+                ", prix=" + prix +
                 '}';
     }
 }

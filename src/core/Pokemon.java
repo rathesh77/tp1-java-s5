@@ -81,7 +81,8 @@ public class Pokemon {
             System.out.println(this+ "est mort");
     }
 
-    public Pokemon(String surnom, int taille, Espece espece){
+    public Pokemon(int id,String surnom, int taille, Espece espece){
+        this.id = id;
         this.surnom = surnom;
         this.taille = taille;
         this.espece = espece;
